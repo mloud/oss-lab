@@ -63,6 +63,12 @@
                 <summary>${task.title}</summary>
                 <div class="task-content">
                     <p>${task.description}</p>
+                    ${task.help && task.help !== 'Není třeba nápověda' ? `
+                    <details class="help-box">
+                        <summary title="Zobrazit nápovědu">?</summary>
+                        <p>${task.help}</p>
+                    </details>
+                    ` : ''}
                 </div>
             `;
 

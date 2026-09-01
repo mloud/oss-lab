@@ -2,36 +2,43 @@ const wargame1Data = [
     {
         "id": 0,
         "title": "Level 0",
-        "description": "Heslo pro účet Level1 leží přímo ve tvých Dokumentech. Někdo ho ale ztratil, nechal zmizet a navíc ho zamaskoval tak, aby vypadalo jako úplně obyčejný obrázek, který nejde otevřít. Najdi ho a přečti."
+        "description": "Heslo pro účet Level1 leží přímo ve tvých Dokumentech. Někdo ho ale ztratil, nechal zmizet a navíc ho zamaskoval tak, aby vypadalo jako úplně obyčejný obrázek, který nejde otevřít. Najdi ho a přečti.",
+        "help": ""
     },
     {
         "id": 1,
         "title": "Level 1",
-        "description": "Nyní jsi přihlášen jako Level1. Heslo pro Level2 je ve složce Neporadek na tvé ploše. Je tam ale obrovské množství zbytečných dat. Hledaný soubor s heslem není na první pohled vidět a navíc se brání úpravám – je v systému označen pouze pro čtení. Budeš muset použít příkazovou řádku (CMD), abys ho odhalil a přečetl."
+        "description": "Nyní jsi přihlášen jako Level1. Heslo pro Level2 je ve složce Neporadek na tvé ploše. Je tam ale obrovské množství zbytečných dat. Hledaný soubor s heslem není na první pohled vidět a navíc se brání úpravám – je v systému označen pouze pro čtení. Budeš muset použít příkazovou řádku (CMD), abys ho odhalil a přečetl.",
+        "help": "dir, attrib, type"
     },
     {
         "id": 2,
         "title": "Level 2",
-        "description": "Úspěšně ses dostal do účtu Level2. Heslo k další úrovni je bezpečně uloženo v C:\\Trezor\\klic.txt. Když se ho ale pokusíš otevřít, systém tě odmítne kvůli chybějícím oprávněním. Máš ale práva administrátora! Zjisti, jak nad souborem násilně převzít vlastnictví a jak si následně přidělit práva ke čtení, abys soubor otevřel."
+        "description": "Úspěšně ses dostal do účtu Level2. Heslo k další úrovni je bezpečně uloženo v C:\\Trezor\\klic.txt. Když se ho ale pokusíš otevřít, systém tě odmítne kvůli chybějícím oprávněním. Máš ale práva administrátora! Zjisti, jak nad souborem násilně převzít vlastnictví a jak si následně přidělit práva ke čtení, abys soubor otevřel.",
+        "help": "Karta zabezpečení souboru"
     },
     {
         "id": 3,
         "title": "Level 3",
-        "description": "Někdo na tomto počítači zablokoval možnost tisku. Zjisti, jaká systémová služba se ve Windows stará o \"Zařazování tisku\". Název této služby je heslo do Level4."
+        "description": "Někdo na tomto počítači zablokoval možnost tisku. Zjisti, jaká systémová služba se ve Windows stará o \"Zařazování tisku\". Název této služby je heslo do Level4.",
+        "help": "Správce procesů"
     },
     {
         "id": 4,
         "title": "Level 4",
-        "description": "Heslo se nachází na fyzickém disku v tomto počítači. Systém ale tento diskový oddíl (partition) momentálně \"nevidí\" a Průzkumník souborů ti nijak nepomůže. Musíš vstoupit do administrátorské konzole a pomocí příkazové řádky zjistit, jaké oddíly se na disku nacházejí. Najdi svazek formátovaný jako FAT32, kterému chybí písmeno, a ručně mu nějaké přiřaď, abys z něj mohl číst."
+        "description": "Heslo se nachází na fyzickém disku v tomto počítači. Systém ale tento diskový oddíl (partition) momentálně \"nevidí\" a Průzkumník souborů ti nijak nepomůže. Musíš vstoupit do administrátorské konzole a pomocí příkazové řádky zjistit, jaké oddíly se na disku nacházejí. Najdi svazek formátovaný jako FAT32, kterému chybí písmeno, a ručně mu nějaké přiřaď, abys z něj mohl číst.",
+        "help": "Není třeba nápověda"
     },
     {
         "id": 5,
         "title": "Level 5",
-        "description": "Ve složce Zmatek ve tvých Dokumentech je obrovský nepořádek. Hledáš soubor, jehož název začíná slovem \"tajne_\". Nástroje grafického rozhraní (Průzkumník) jsou pro tento úkol přísně zakázány! Pomocí příkazového řádku (CMD) vypiš obsah složky tak, abys tento konkrétní soubor našel, poté přečti jeho obsah (opět pomocí CMD). Ten obsahuje heslo pro Level6."
+        "description": "Ve složce Zmatek ve tvých Dokumentech je obrovský nepořádek. Hledáš soubor, jehož název začíná slovem \"tajne_\". Nástroje grafického rozhraní (Průzkumník) jsou pro tento úkol přísně zakázány! Pomocí příkazového řádku (CMD) vypiš obsah složky tak, abys tento konkrétní soubor našel, poté přečti jeho obsah (opět pomocí CMD). Ten obsahuje heslo pro Level6.",
+        "help": "dir, type"
     },
     {
         "id": 6,
         "title": "Level 6",
-        "description": "Tvým prvním úkolem je najít v domovské složce dávkový soubor fantom.bat a zjistit, jak jeho pomocí získat výsledné heslo k pokoření celé hry."
+        "description": "Tvým prvním úkolem je najít v domovské složce dávkový soubor fantom.bat a zjistit, jak jeho pomocí získat výsledné heslo k pokoření celé hry.",
+        "help": "Není třeba nápověda"
     }
 ];
