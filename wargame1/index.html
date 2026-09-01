@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wargame 1</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Wargame 1</h1>
+            <p>Tvůj první úkol je tady.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="tasks">
+            <h2>Zadání úkolů</h2>
+            
+            <div class="setup-box">
+                <h3>Příprava před hraním</h3>
+                <ol>
+                    <li>Ze složky <code>C:\Skripty</code> spusť skript na kopírování virtuálních počítačů.</li>
+                    <li>Vyber virtuální počítač obsahující slovo <strong>Wargame1</strong>.</li>
+                    <li>Zapni si VirtualBox a spusť tento virtuální počítač.</li>
+                    <li>Přihlas se do účtu <strong>Level0</strong> (bez hesla).</li>
+                    <li>Pokračuj s úkoly níže.</li>
+                </ol>
+            </div>
+
+            <br><br>
+            <!-- Kontejner, kam se pomocí JavaScriptu vygenerují úkoly -->
+            <div id="tasks-container"></div>
+
+            <br><br>
+            <a href="../index.html" class="btn">Zpět na přehled</a>
+        </section>
+    </main>
+
+    <!-- Načtení dat a skript pro vygenerování úkolů -->
+    <script src="data.js"></script>
+    <script>
+        // Najdeme kontejner na stránce
+        const container = document.getElementById('tasks-container');
+
+        // Projdeme všechna data z data.js a pro každé vytvoříme HTML element
+        wargame1Data.forEach(task => {
+            const details = document.createElement('details');
+            details.className = 'task-item';
+
+            details.innerHTML = `
+                <summary>${task.title}</summary>
+                <div class="task-content">
+                    <p>${task.description}</p>
+                </div>
+            `;
+
+            container.appendChild(details);
+        });
+    </script>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+</body>
+
+</html>

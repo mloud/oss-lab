@@ -1,0 +1,195 @@
+/* CSS Proměnné pro moderní vzhled (Light/Dark mode připraveno) */
+:root {
+    --bg-color: #f8fafc;
+    --text-color: #0f172a;
+    --primary-color: #3b82f6;
+    --secondary-color: #64748b;
+    --card-bg: #ffffff;
+    --border-color: #e2e8f0;
+    --font-family: 'Inter', sans-serif;
+}
+
+/* Základní reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Kontejner pro centrování obsahu */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Hlavička */
+header {
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+header p {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
+/* Hlavní obsah */
+main {
+    flex: 1;
+    padding: 40px 20px;
+}
+
+.tasks {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.tasks h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+/* Patička */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: var(--secondary-color);
+    border-top: 1px solid var(--border-color);
+}
+
+/* Tlačítka */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3);
+}
+
+.btn:hover {
+    background-color: #2563eb; /* Tmavší modrá při najetí */
+    transform: translateY(-2px); /* Mírné povyskočení */
+    box-shadow: 0 6px 8px -1px rgba(59, 130, 246, 0.4);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* --- Rozbalovací úkoly (Accordion) --- */
+details.task-item {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Změna barvy rámečku po rozbalení */
+details[open].task-item {
+    border-color: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.1);
+}
+
+details.task-item summary {
+    padding: 15px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: var(--card-bg);
+    list-style: none; /* Schová výchozí šipku v některých prohlížečích */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+}
+
+details.task-item summary::-webkit-details-marker {
+    display: none; /* Schová výchozí šipku v Safari/Chrome */
+}
+
+/* Vlastní ikonka plus/mínus na konci */
+details.task-item summary::after {
+    content: '+';
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--primary-color);
+    transition: transform 0.2s;
+}
+
+details[open].task-item summary::after {
+    content: '−'; /* Symbol mínus */
+}
+
+/* Obsah úkolu po rozbalení */
+.task-content {
+    padding: 20px;
+    background-color: var(--card-bg);
+    border-top: 1px solid var(--border-color);
+    color: var(--secondary-color);
+}
+
+/* Instrukce pro přípravu hry */
+.setup-box {
+    background-color: var(--bg-color);
+    border-left: 4px solid var(--primary-color);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 0 8px 8px 0;
+}
+
+.setup-box h3 {
+    margin-bottom: 10px;
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+.setup-box ol {
+    margin-left: 20px;
+    color: var(--secondary-color);
+}
+
+.setup-box li {
+    margin-bottom: 8px;
+}
+
+.setup-box code {
+    background-color: #e2e8f0;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #0f172a;
+}

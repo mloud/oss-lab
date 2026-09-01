@@ -1,0 +1,38 @@
+0. Vytvoření nového repozitáře (pouze na začátku):
+git init (inicializuje prázdný repozitář v aktuální složce).
+git add . (připraví všechny stávající soubory).
+git commit -m "Prvotní commit" (uloží úplně první verzi projektu).
+
+1. Aktualizace: 
+git checkout main a následně git pull.
+
+2. Nová větev pro úkol: 
+git checkout -b jmeno-ukolu.
+
+3. Práce a commitování:
+Změníte soubory, git add ., git commit -m "Popis zmen".
+
+4. Sloučení rovnou u sebe (Merge):
+git checkout main (přepnete se zpět na hlavní).
+git merge jmeno-ukolu (vcucne změny z vaší úkolové větve rovnou do main).
+
+5. Odeslání hotového na server:
+git push (odešle váš aktuální, již spojený main na GitHub).
+
+6. Úklid u vás:
+git branch -d jmeno-ukolu (smažete nepotřebnou větev).
+
+
+======= Ostatní příkazy =======
+
+7. Zahození neuložených změn (Discard):
+git restore jmeno-souboru.txt (zahodí změny v jednom konkrétním souboru a vrátí ho do původního stavu).
+git restore . (zahodí úplně všechny neuložené změny ve složce).
+
+8. Prohlížení změn (Diff):
+git diff (zobrazí detailní výpis všech vašich úprav, které jste udělali od posledního uložení - co se přidalo a co smazalo).
+git diff jmeno-souboru.txt (zobrazí změny pouze v jednom konkrétním souboru).
+
+9. Připojení lokálního repozitáře na GitHub:
+git remote add origin <URL-ADRESA-REPOZITARE> (propojí váš lokální projekt s repozitářem na GitHubu).
+git push -u origin main (odešle váš kód na GitHub a nastaví výchozí větev pro budoucí pushnutí).

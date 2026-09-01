@@ -1,0 +1,27 @@
+# Zdroje specifické pro vývojová prostředí (IDE)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Soubory operačního systému
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Složky pro případné budoucí nástroje (např. Node.js, pokud bys začal používat NPM)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logy a dočasné soubory
+*.log
+tmp/
+temp/
