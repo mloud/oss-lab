@@ -14,7 +14,7 @@ const wargame1Data = [
     {
         "id": 2,
         "title": "Level 2",
-        "description": "Úspěšně ses dostal do účtu Level2. Heslo k další úrovni je bezpečně uloženo v C:\\Trezor\\klic.txt. Když se ho ale pokusíš otevřít, systém tě odmítne kvůli chybějícím oprávněním. Máš ale práva administrátora! Zjisti, jak nad souborem násilně převzít vlastnictví a jak si následně přidělit práva ke čtení, abys soubor otevřel.",
+        "description": "Úspěšně ses dostal do účtu Level2. Heslo k další úrovni je bezpečně uloženo v C:\\Trezor\\klic. Když se ho ale pokusíš otevřít, systém tě odmítne kvůli chybějícím oprávněním. Máš ale práva administrátora! Zjisti, jak nad souborem násilně převzít vlastnictví a jak si následně přidělit práva ke čtení, abys soubor otevřel.",
         "help": "Karta zabezpečení souboru"
     },
     {
