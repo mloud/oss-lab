@@ -8,7 +8,7 @@ const wargame1Data = [
     {
         "id": 1,
         "title": "Level 1",
-        "description": "Nyní jsi přihlášen jako Level1. Heslo pro Level2 je ve složce Neporadek na tvé ploše. Je tam ale obrovské množství zbytečných dat. Hledaný soubor s heslem není na první pohled vidět a navíc se brání úpravám – je v systému označen pouze pro čtení. Musíš použít JEN příkazovou řádku (CMD), abys ho odhalil a přečetl.",
+        "description": "Nyní jsi přihlášen jako Level1. Heslo pro Level2 je ve složce Neporadek na tvé ploše. Je tam ale obrovské množství zbytečných dat. Hledaný soubor s heslem není na první pohled vidět a navíc se brání úpravám – je v systému označen pouze pro čtení. Nástroje grafického rozhraní (Průzkumník) jsou pro tento úkol přísně zakázány! Použijte příkazový řádek (CMD).",
         "help": "dir, attrib, type"
     },
     {
@@ -32,7 +32,7 @@ const wargame1Data = [
     {
         "id": 5,
         "title": "Level 5",
-        "description": "Ve složce Zmatek ve tvých Dokumentech je obrovský nepořádek. Hledáš soubor, jehož název začíná slovem \"tajne_\". Nástroje grafického rozhraní (Průzkumník) jsou pro tento úkol přísně zakázány! Pomocí příkazového řádku (CMD) vypiš obsah složky tak, abys tento konkrétní soubor našel, poté přečti jeho obsah (opět pomocí CMD). Ten obsahuje heslo pro Level6.",
+        "description": "Ve složce Zmatek ve tvých Dokumentech je obrovský nepořádek. Hledáš soubor, jehož název začíná slovem \"tajne_\". Nástroje grafického rozhraní (Průzkumník) jsou pro tento úkol přísně zakázány! Najdi soubor s heslem.",
         "help": "dir, type"
     },
     {
